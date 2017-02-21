@@ -14,8 +14,17 @@
 </head>
 <body>
 	<div class="buttons"></div>
-	<div class="entry_form"></div>
-	<div class="results"></div>
+	<div class="entry_form">
+		   <form id="input-form">
+      <label for="topic-input">New Topic</label>
+      <input type="text" id="topic-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-topic" type="submit" value="Add New Topic">
+    </form>
+	</div>
+
+	<div id="results"></div>
 
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
