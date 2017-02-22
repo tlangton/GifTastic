@@ -2,10 +2,6 @@ var topics=[];
 
 topics = ["time-lapse","long exposure","high speed"];
 
-var x;
-var y;
-var z;
-
 function renderButtons() {
 
 	$(".buttons").empty();
@@ -21,7 +17,7 @@ function renderButtons() {
 //Giphy LOAD Images
 $("button").on('click',function(){
 	var x = $(this).data("name");
-	console.log(x)
+	// console.log(x)
 
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q="+x+"+photo&api_key=dc6zaTOxFJmzC&limit=10";
 
@@ -29,28 +25,31 @@ $("button").on('click',function(){
 		url: queryURL,
 		method: 'GET'
 	}).done(function(response) {
-		console.log(response);
+		// console.log(response);
 		for (var i = 0; i < response.data.length; i++) {
-			$('#results').prepend("<img class='giff' data-toggle=0 data-alt='"  +response.data[i].images.downsized.url+ "'  data-still='"+response.data[i].images.downsized_still.url+"' src='" +response.data[i].images.downsized_still.url+ "' ><p>Rating: "+response.data[i].rating);
+			$('#results').prepend("<img class='giff' data-toggle='0' data-alt='"  +response.data[i].images.downsized.url+ "'  data-still='"+response.data[i].images.downsized_still.url+"' src='" +response.data[i].images.downsized_still.url+ "' ><p>Rating: "+response.data[i].rating);
 		};
 
 		$(".giff").on('click',function(){
-			 x = $(this).data("alt");
-			 y = $(this).data("still");
-			 z = $(this).data("toggle");
 
-			console.log(x);
-			console.log(y);
-			console.log(z);
+			var x = $(this).data("alt");
+			var y = $(this).data("still");
+			var z = $(this).data("toggle");
 
-			if (z===0) {
+			// console.log(this);
+			// console.log(x);
+			// console.log(y);
+			// console.log(z);
+
+			if (z === 0) {
+				// console.log("IT'S ZEROOOO")
 				$(this).attr('src', x);
-				$(this).attr('data-toggle', 1);
+				$(this).data('toggle', 1);
 				z = 1;
-			} else
-			{
+			} else {
+				// console.log("HUH")
 				$(this).attr('src', y);
-				$(this).attr('data-toggle', 0);
+				$(this).data('toggle', 0);
 				z = 0;
 			};
 		});
@@ -71,7 +70,8 @@ renderButtons();
       	} else if (existsalready) {
       		return;
       	} else {
-      		topics.push(topic);
+      		$("#topic-input").val("")
+       		topics.push(topic);
       		$("#topic-input").text("");
       		renderButtons();
       	}
