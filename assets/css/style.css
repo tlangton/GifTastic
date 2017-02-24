@@ -16,15 +16,17 @@ button{
 
 .title {
 	padding-top: 15px;
-	font-size: 150%;
+	font-size: 250%;
 	text-align: center;
 	position: relative;
 	left: -40px;
+	bottom: 12px;
 }
 
 #caption {
 	position: relative;
 	left: 0px;
+	bottom: 0px;
 }
 
 
@@ -43,4 +45,17 @@ img  {
 
 .intro {
 	padding-top: 20px;
+}
+
+.buttons {
+	padding-top: 20px;
+}
+
+.reset {
+	    position: relative;
+    top: 15px;
+}
+
+a {
+	z-index: 10;
 }

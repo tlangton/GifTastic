@@ -1,6 +1,9 @@
 setTimeout(function(){
 	$(".intro").fadeOut(); }, 3000);
 
+// setTimeout(function(){
+// 	$(".hidden").fadeIn(); }, 3500);
+
 setTimeout(function(){
 	$(".hidden").removeClass ("hidden"); }, 3500);
 
@@ -36,6 +39,8 @@ $("button").on('click',function(){
 			$('#results').prepend("<img class='giff' data-toggle='0' data-alt='"  + response.data[i].images.downsized.url + "'  data-still='"+ response.data[i].images.downsized_still.url +"' src='" + response.data[i].images.downsized_still.url + "' ><p>Rating:  "+ response.data[i].rating.toUpperCase());
 		};
 
+
+//start of swap gif with still
 		$(".giff").on('click',function(){
 
 			var x = $(this).data("alt");
@@ -59,6 +64,9 @@ $("button").on('click',function(){
 				z = 0;
 			};
 		});
+//end of swap
+
+
 	});
 });
 

@@ -15,7 +15,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/darkly.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slate.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
@@ -27,12 +27,7 @@
 			<div class="row">
 				<nav class="navbar navbar-default navbar-fixed-top">
 					<div class="container">
-						<div class="navbar-header hidden">
-							<a class="navbar-brand" href="index.html">
-								<section class="glyphicon glyphicon-off"> </section> Reset
-							</a>
-
-						</div>
+						<a class="navbar-brand hidden reset" href="index.html">  <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reset</a>
 						<div class="title hidden">The Giphy Connector Display Thing</div>
 					</div>
 				</nav>
@@ -55,7 +50,7 @@
 						<!-- Button triggers new movie to be added -->
 						<input id="add-topic" type="submit" value="Add New Topic">
 					</form>
-					<span id="instuctions">Load GIFs by clicking buttons, or making new buttons by topic. Enter topic in the New Topic box and click Add.<br>Click on the image to see the animation.</span>
+					<span id="instuctions">Load GIFs by clicking buttons, or making new buttons by topic. Enter topic in the New Topic box and click Add.<br>Click on the image to see the animation.<br> Click Reset to clear the user created buttons and reload the application.</span>
 				</div>
 
 				<div id="results"> </div>
