@@ -15,12 +15,21 @@ button{
 }
 
 .title {
+	padding-top: 15px;
 	font-size: 150%;
+	text-align: center;
+	position: relative;
+	left: -40px;
+}
+
+#caption {
+	position: relative;
+	left: 0px;
 }
 
 
 .hidden {
-visibility: hidden;
+	visibility: hidden;
 }
 
 
@@ -28,6 +37,10 @@ img  {
 	padding: 10px;
 }
 
- #instuctions {
+#instuctions {
 	padding: 20px;
+}
+
+.intro {
+	padding-top: 20px;
 }
