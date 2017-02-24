@@ -1,7 +1,33 @@
 
 
 
-  button, div, form, input, p {
-  margin: 12px;
+button, div, form, input, p {
+	margin: 12px;
 
-  }
+}
+
+.center-paragraph {
+	text-align: center;
+}
+
+button{
+	color: black;
+}
+
+.title {
+	font-size: 150%;
+}
+
+
+.hidden {
+visibility: hidden;
+}
+
+
+img  {
+	padding: 10px;
+}
+
+ #instuctions {
+	padding: 20px;
+}
