@@ -39,7 +39,7 @@ function renderButtons() {
             };
 
 
-            //start of swap gif with still
+             //start of swap gif with still
         });
     });
 }
