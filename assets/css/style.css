@@ -59,3 +59,9 @@ img  {
 a {
 	z-index: 10;
 }
+
+
+#splash {
+	border-right-color: #333;
+	border-width: thick;
+}
