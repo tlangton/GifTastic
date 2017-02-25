@@ -8,7 +8,7 @@ setTimeout(function() {
 
 var topics = [];
 
-topics = ["time-lapse", "long exposure", "high speed"];
+topics = ["Funniest GIF", "Early Animation", "Eadweard Muybridge", "Motion Studies", "Jean Renoir"];
 
 function renderButtons() {
 
